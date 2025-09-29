@@ -1,4 +1,8 @@
 package moviebooking;
+//Code reviewed by : Manuel John L. Dalacan
+//Remarks:
+//No checkstyle error on this class.
+
 
 public abstract class BookingSystem {
     /** Checks the availability of the showtime.

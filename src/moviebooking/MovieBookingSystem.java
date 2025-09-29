@@ -1,4 +1,7 @@
 package moviebooking;
+//Code reviewed by : Manuel John L. Dalacan
+//Remarks:
+//No checkstyle error on this class.
 
 import java.util.ArrayList;
 

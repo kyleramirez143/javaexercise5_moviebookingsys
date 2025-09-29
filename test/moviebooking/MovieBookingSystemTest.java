@@ -1,4 +1,7 @@
 package moviebooking;
+//Code reviewed by : Manuel John L. Dalacan
+//Remarks:
+//No checkstyle error on this class.
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -96,6 +99,15 @@ class MovieBookingSystemTest {
         assertEquals(expectedOutput, outCont.toString().trim(),
                 "The output should match the expected output.");
     }
+    @DisplayName("Test Cancel Invalid Showtime")
+    @Test
+    void testCancelInvalidShowtime() {
+        final int t5 = 5;
+        movie.cancelReservation("11:00 AM", t5);
+        String expectedOutput = "Invalid showtime.";
+        assertEquals(expectedOutput, outCont.toString().trim(),
+                "The output should match the expected output.");
+    }
 
     @DisplayName("Test book another showtime")
     @Test
@@ -105,5 +117,4 @@ class MovieBookingSystemTest {
         movie.bookTicket("1:00 PM", t5);
         assertEquals(t70, movie.getAvailableTickets("1:00 PM"));
     }
-
 }

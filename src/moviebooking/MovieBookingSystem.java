@@ -127,14 +127,14 @@ public class MovieBookingSystem extends BookingSystem {
      * @param args
      */
     public static void main(final String[] args) {
-//        MovieBookingSystem movie = new MovieBookingSystem();
-//
-//        movie.checkAvailability("10:00 AM");
-//        movie.bookTicket("10:00 AM", 5);
-//        movie.bookTicket("10:00 AM", 100);
-//        movie.cancelReservation("10:00 AM", 3);
-//        movie.bookTicket("1:00 PM", 2);
-//        movie.cancelReservation("1:00 PM", 5);
+        MovieBookingSystem movie = new MovieBookingSystem();
+
+        movie.checkAvailability("10:00 AM");
+        movie.bookTicket("10:00 AM", 5);
+        movie.bookTicket("10:00 AM", 100);
+        movie.cancelReservation("10:00 AM", 3);
+        movie.bookTicket("1:00 PM", 2);
+        movie.cancelReservation("1:00 PM", 5);
     }
 
 }
